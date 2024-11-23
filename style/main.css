@@ -1,0 +1,50 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+#titulo{
+    color: white;
+    padding-top: 1rem;
+    font-family: monospace;
+}
+.labelFecha{
+    color: white;
+    font-family: monospace;
+    font-size: 1.5rem;
+}
+#fecha:focus,
+#fecha:hover{
+    background: linear-gradient(
+        90deg,
+        rgba(255, 83, 123, 1) 0%,
+        rgba(255, 105, 58, 1) 100%
+      );
+      color: white ;
+}
+.list-group-item:focus,
+.list-group-item:hover{
+    background: linear-gradient(
+        90deg,
+        rgb(0, 0, 0) 10%,
+        rgb(255, 255, 255) 100%
+      );
+      color: white ;
+}
+.volverArriba{
+    width: 20%;
+    height: 2rem;
+    border-radius: 3rem;
+    background-color: #d7363600;
+    color: white;
+}
+.volverArriba:focus,
+.volverArriba:hover{
+    background: linear-gradient(
+        90deg,
+        rgb(0, 0, 0) 20%,
+        rgba(255, 105, 58, 1) 100%
+      );
+      color: white ;
+}
