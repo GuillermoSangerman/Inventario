@@ -13,7 +13,7 @@ export const tuTiFruti = [
     {
         id: 3,
         fruta: 'Pera',
-        cantidad: 10
+        cantidad: 5
     },
     {
         id: 4,
@@ -43,7 +43,7 @@ export const tuTiFruti = [
     {
         id: 9,
         fruta: 'Piña',
-        cantidad: 10
+        cantidad: 3
     },
     {
         id: 10,

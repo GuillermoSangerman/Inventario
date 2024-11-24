@@ -2,6 +2,7 @@ import { tuTiFruti } from "./dataFrutas.js";
 
 const listGroup = document.querySelector('.list-group')
 
+
 /**
  * Este ejercicio constara de varias partes:
  * Utiliza query selector para llamar el Ul que se encuentra en el html
@@ -40,7 +41,7 @@ export function generarTemplate(id, fruta, cantidad) {
         color = "bg-danger text-white"
     }
     const fruta_template = `
-    <button class="list-group-item bg-dark bg-opacity-75 text-white fs-5" id="${id}" data-bs-toggle="modal" data-bs-target="#staticBackdrop">${fruta} <span class="badge ${color} text-black rounded-pill" >${cantidad} unidades</span></button>
+    <button class="list-group-item  text-start bg-dark bg-opacity-75 text-white fs-5" id="${id}">${fruta} <span class="badge ${color} text-black rounded-pill" >${cantidad} unidades</span></button>
     `
     listGroup.innerHTML += fruta_template ;
 }
@@ -85,30 +86,6 @@ export function mostrarExcesoDeFrutas() {
         } 
     }
 }
-
-export function modal() {
-    listGroup.innerHTML = ""
-    let modal_template = `<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="modal-dialog modal-sm">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          hello
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Understood</button>
-        </div>
-      </div>
-    </div>
-  </div>`
-  listGroup.innerHTML += modal_template ;
-  
-}
-
 // mostrarAlertaDeFrutas()
  /**  * En el diseño original las frutas cuya cantidad es menor o igual que tres tienen un background color diferente, modifica la funcion generar template para que tenga este mismo comportamiento (puedes jugar con las clases: bg-warning bg-primary para lograr tu objetivo) 
 */
